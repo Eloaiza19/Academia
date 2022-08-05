@@ -14,9 +14,9 @@
                     <img style="height: 200px" src="{{Storage::url($item->imagen) }}" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">{{$item->nombre}}</h5>
-                        <p class="card-text">{{$item->description}}</p>
-                        <p class="card-text">{{$item->duracion}}</p>
-                        <a href="#" class="btn btn-primary">Ver Detalle</a>
+                        {{-- <p class="card-text">{{$item->description}}</p>
+                        <p class="card-text">{{$item->duracion}}</p> --}}
+                        <a href="/cursos/{{$item->id}}" class="btn btn-primary">Ver Detalle</a>
                     </div>
                 </div>
             </div>{{--Cierro el col--}}

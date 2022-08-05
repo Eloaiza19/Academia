@@ -1,4 +1,4 @@
-<html>
+<html lang="es">
     <head>
         {{--@yield nos permitira llamar esta parte de la plantilla en otras vistas--}}
         <title>Academia - @yield('titulo')</title>
