@@ -43,7 +43,7 @@ class CursoController extends Controller
         // $validacionDatos = $request->validate([
         //     'nombre' => 'required|max:10',
         //     'imagen' => 'required|image'
-                
+
         // ]);
 
 

@@ -9,6 +9,9 @@ use App\Http\Controllers\HeladeriaControler;
 use App\Http\Controllers\ControladorPrecios;
 
 use App\Http\Controllers\CursoController;
+use Illuminate\Pagination\Cursor;
+
+use App\Http\Controllers\DocenteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +23,10 @@ use App\Http\Controllers\CursoController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/docentes/create', function () {
+    return view('docentes.create');
+});
 
 Route::get('/', function () {
     return view('cursos.bienvenido');
@@ -59,3 +66,4 @@ Route::get('/iva/{a}/{b}',[ControladorPrecios::class,'getIVA']);
 
 Route::resource('cursos', CursoController::class);
 
+Route::resource('docentes', DocenteController::class);
